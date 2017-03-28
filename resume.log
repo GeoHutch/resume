@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.1.23)  27 MAR 2017 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.1.23)  28 MAR 2017 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -412,7 +412,7 @@ e
 *geometry* detected driver: pdftex
 
 Package geometry Warning: The marginal notes overrun the paper.
-     Add 0.3209pt and more to the right margin.
+     Add 36.4559pt and more to the right margin.
 
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
@@ -420,14 +420,14 @@ Package geometry Warning: The marginal notes overrun the paper.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.96796pt, 72.26999pt)
+* h-part:(L,W,R)=(36.135pt, 525.23795pt, 36.135pt)
 * v-part:(T,H,B)=(36.135pt, 772.77695pt, 36.135pt)
 * \paperwidth=597.50793pt
 * \paperheight=845.04694pt
-* \textwidth=452.96796pt
+* \textwidth=525.23795pt
 * \textheight=772.77695pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
 * \topmargin=-73.535pt
 * \headheight=17.0pt
 * \headsep=20.40001pt
@@ -495,21 +495,13 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 136.
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
 
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 146.
-
-
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 163.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -517,7 +509,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 174.
+ne 148.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -525,17 +517,35 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 181.
+ne 165.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 176.
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 178.
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 185.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./resume.aux) ) 
 Here is how much of TeX's memory you used:
- 7829 strings out of 494945
- 126388 string characters out of 6181032
- 336896 words of memory out of 5000000
- 10962 multiletter control sequences out of 15000+600000
- 19614 words of font info for 68 fonts, out of 8000000 for 9000
+ 7854 strings out of 494945
+ 126834 string characters out of 6181032
+ 336911 words of memory out of 5000000
+ 10984 multiletter control sequences out of 15000+600000
+ 19922 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,9n,51p,8817b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/shar
@@ -544,13 +554,14 @@ e/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist
 /type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on resume.pdf (1 page, 94143 bytes).
+nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
+2.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on resume.pdf (1 page, 103769 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 17409 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 17921 words of extra memory for PDF output out of 20736 (max. 10000000)
 

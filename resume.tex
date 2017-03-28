@@ -34,7 +34,7 @@
 	\textheight=700px                    % Saving trees ;-)
 \usepackage{url}
 
-\geometry{verbose,tmargin=0.5in,bmargin=0.5in,lmargin=1in,rmargin=1in}
+\geometry{verbose,tmargin=0.5in,bmargin=0.5in,lmargin=0.5in,rmargin=0.5in}
 
 \frenchspacing              % Better looking spacings after periods
 \pagestyle{empty}           % No pagenumbers/headers/footers
@@ -78,8 +78,8 @@
 \newcommand{\EducationEntry}[4]{
 		\noindent \textbf{#1} \hfill      % Study
 		\colorbox{Black}{%
-			\parbox{6em}{%
-			\hfill\color{White}#2}} \par  % Duration
+			\parbox{6.5em}{%
+			\hfill\color{White}\textbf{#2}}} \par  % Duration
 		\noindent \textit{#3} \par        % School
 		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
 		\normalsize \par}
@@ -88,13 +88,13 @@
 	\noindent \textbf{#1} \hfill      % Study
 	\colorbox{Black}{%
 		\parbox{6em}{%
-			\hfill\color{White}#2}} \par % Duration
+			\hfill\color{White}\textbf{#2}}} \par % Duration
 	\noindent\hangindent=2em\hangafter=0 \small #3 % Description
 	\normalsize \par}
 
 \newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
 		\noindent \textbf{#1} \hfill      % Jobname
-		\colorbox{Black}{\color{White}#2} \par  % Duration
+		\colorbox{Black}{\color{White}\textbf{#2}} \par  % Duration
 		\noindent \textit{#3} \par              % Company
 		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
 		\normalsize \par}
@@ -138,21 +138,23 @@ Available May through August 2017.
 \WorkEntry{U.C. Santa Barbara \textit{Research Mentorship Program}}{Summer 2015}{DEEPSPACE Experimental Cosmology lab (PI: Phil Lubin), Summer research intern}{Worked on project: \textit{Frosty Mirror Frontier: Analyzing the Optical Effects of Mid-stratospheric Conditions on a Telescope Mirror}.}
 \sepspace
 
-\WorkEntry{Junior Assembly Intern}{Summer 2014}{Aurrion inc., summer intern}{Experimented with methods and processes to reduce contamination in the process of bonding silicon die to a wafer and automating the system which would analyze the flaws that said contamination created.}
+\WorkEntry{Junior Assembly Intern}{Summer 2014}{Aurrion Inc., summer intern}{\begin{itemize}\setlength\itemsep{0em}
+		\item Experimented with methods and processes to reduce contamination in the process of bonding silicon die to a wafer
+		\item Worked on automating the system which would analyze the flaws that said contamination created	\end{itemize} }
 
 %%% Education
 %%% ------------------------------------------------------------
 \label{EDU}
 \NewPart{Education}{}
 
-\EducationEntry{U.C. Berkeley}{2016-present}{Intended Major: Electrical Engineering and Computer Science}{Cumulative GPA: 3.676. Class of 2020. Relevant courses in: Data Structures \& Algorithms, Linear Algebra, Discrete Mathematics.}
+\EducationEntry{U.C. Berkeley}{2016-present}{Intended Major: Electrical Engineering and Computer Science\\Minor: Physics}{Cumulative GPA: 3.676. Class of 2020. Relevant courses in: Data Structures \& Algorithms, Linear Algebra, Discrete Mathematics, Thermodynamics \& Electricity/Magnetism.}
 \sepspace
 
-\EducationEntryNoSubtitle{Robert Louis Stevenson School}{2012-2016}{Cumulative GPA: 4.24 (Top 2\% of class).\\Honors/Awards:\\
-		\indent\textit{Cum Laude Society} for Academic Achievement; 2015, 2016.\\
-		\indent Winner, \textit{Rensselaer Medal} for scientific and mathematical achievement; 2015.\\
-		\indent Rotary International Youth Leadership Award \& \textit{Camp Royal} attendance; June 2015.\\
-		\indent \textit{Summa Cum Laude} on National Latin Examination; 2013, 2014, 2015. \textit{Magna Cum Laude}; 2016.
+\EducationEntryNoSubtitle{Robert Louis Stevenson School}{2012-2016}{Cumulative GPA: 4.24 (Top 2\% of class).\\\textbf{Honors/Awards}:\begin{itemize}\setlength\itemsep{0em}
+		\item\textit{Cum Laude Society} for Academic Achievement; 2015, 2016.
+		\item Winner, \textit{Rensselaer Medal} for scientific and mathematical achievement; 2015.
+		\indent Rotary International Youth Leadership Award \& \textit{Camp Royal} attendance; June 2015.
+		\item \textit{Summa Cum Laude} on National Latin Examination; 2013, 2014, 2015. \textit{Magna Cum Laude}; 2016.\end{itemize}
 	}
 	
 	
@@ -164,7 +166,7 @@ Available May through August 2017.
 %\SkillsEntry{Languages}{Dutch (mother tongue)}
 %\SkillsEntry{}{English (fluent)}
 %\SkillsEntry{}{German (fluent)}
-\begin{tabular}{cc}
+\begin{tabular}{ll}
 \textit{\raggedright{Programming:}} & Python, Java, \LaTeX.\\
 \textit{UNIX system administration:} & Debain, Ubuntu, RHEL\\
 \end{tabular}
@@ -172,9 +174,11 @@ Available May through August 2017.
 %%% Extracurriculars
 %%% ------------------------------------------------------------
 \NewPart{Extracurricular Activities}{}
-Lead control systems engineer \& founding member, Stevenson School FIRST Robotics Competition team; 2014-2016\\
-Sophomore Wilderness Expedition Co-Leader; 2015-2016\\
-Technical Theater: lighting and sound design, Stage Manager; 2012-2016
+\begin{itemize}\setlength\itemsep{0em}
+	\item Lead control systems engineer \& founding member, Stevenson School FIRST Robotics Competition team; 2014-2016
+	\item Sophomore Wilderness Expedition Co-Leader; 2015-2016
+	\item Technical Theater: lighting and sound design, Stage Manager; 2012-2016
+\end{itemize}
 
 %%% Referencese
 %%% ------------------------------------------------------------
