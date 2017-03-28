@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+							
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\geometry{verbose,tmargin=0.5in,bmargin=0.5in,lmargin=1in,rmargin=1in}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%			            % Change font of \section command
+	\usefont{OT1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{OT1}{phv}{m}{n}\hfill #1
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}		       % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=2em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\textit{#1}}			   % Entry name (birth, address, etc.)
+		\hspace{1.5em} #2 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{Black}{%
+			\parbox{6em}{%
+			\hfill\color{White}#2}} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+	
+\newcommand{\EducationEntryNoSubtitle}[3]{
+	\noindent \textbf{#1} \hfill      % Study
+	\colorbox{Black}{%
+		\parbox{6em}{%
+			\hfill\color{White}#2}} \par % Duration
+	\noindent\hangindent=2em\hangafter=0 \small #3 % Description
+	\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill      % Jobname
+		\colorbox{Black}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par              % Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{GEORGE HUTCHINSON}
+\MySlogan{4669 Vintage Ranch Lane, Santa Barbara, CA, 93110\\\hspace*{\fill}(805) 252-7231, \url{geohh@protonmail.ch}}
+
+
+%%% Personal details
+%%% ------------------------------------------------------------
+%\NewPart{Personal details}{}
+%
+%%\PersonalEntry{Birth}{January 1, 1980}
+%\PersonalEntry{Address}{4669 Vintage Ranch Lane, Santa Barbara, CA, 93110}
+%\PersonalEntry{Phone}{(805) 252-7231}
+%\PersonalEntry{Mail}{\url{geohh@protonmail.ch}}
+
+%%% Goal statement
+%%% ------------------------------------------------------------
+\label{GOAL}
+\NewPart{Goal}
+
+To intern in a setting where I can expand my understanding of mathematics, computer science, and physical science.
+Available May through August 2017.
+
+%%% Work Experiance
+%%% ------------------------------------------------------------
+\label{WORK}
+
+\NewPart{Work experience}{}
+
+\WorkEntry{U.C. Santa Barbara \textit{Research Mentorship Program}}{Summer 2015}{DEEPSPACE Experimental Cosmology lab (PI: Phil Lubin), Summer research intern}{Worked on project: \textit{Frosty Mirror Frontier: Analyzing the Optical Effects of Mid-stratospheric Conditions on a Telescope Mirror}.}
+\sepspace
+
+\WorkEntry{Junior Assembly Intern}{Summer 2014}{Aurrion inc., summer intern}{Experimented with methods and processes to reduce contamination in the process of bonding silicon die to a wafer and automating the system which would analyze the flaws that said contamination created.}
+
+%%% Education
+%%% ------------------------------------------------------------
+\label{EDU}
+\NewPart{Education}{}
+
+\EducationEntry{U.C. Berkeley}{2016-present}{Intended Major: Electrical Engineering and Computer Science}{Cumulative GPA: 3.676. Class of 2020. Relevant courses in: Data Structures \& Algorithms, Linear Algebra, Discrete Mathematics.}
+\sepspace
+
+\EducationEntryNoSubtitle{Robert Louis Stevenson School}{2012-2016}{Cumulative GPA: 4.24 (Top 2\% of class).\\Honors/Awards:\\
+		\indent\textit{Cum Laude Society} for Academic Achievement; 2015, 2016.\\
+		\indent Winner, \textit{Rensselaer Medal} for scientific and mathematical achievement; 2015.\\
+		\indent Rotary International Youth Leadership Award \& \textit{Camp Royal} attendance; June 2015.\\
+		\indent \textit{Summa Cum Laude} on National Latin Examination; 2013, 2014, 2015. \textit{Magna Cum Laude}; 2016.
+	}
+	
+	
+
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+%\SkillsEntry{Languages}{Dutch (mother tongue)}
+%\SkillsEntry{}{English (fluent)}
+%\SkillsEntry{}{German (fluent)}
+\begin{tabular}{cc}
+\textit{\raggedright{Programming:}} & Python, Java, \LaTeX.\\
+\textit{UNIX system administration:} & Debain, Ubuntu, RHEL\\
+\end{tabular}
+
+%%% Extracurriculars
+%%% ------------------------------------------------------------
+\NewPart{Extracurricular Activities}{}
+Lead control systems engineer \& founding member, Stevenson School FIRST Robotics Competition team; 2014-2016\\
+Sophomore Wilderness Expedition Co-Leader; 2015-2016\\
+Technical Theater: lighting and sound design, Stage Manager; 2012-2016
+
+%%% Referencese
+%%% ------------------------------------------------------------
+\NewPart{References}{}
+Available upon request
+\end{document}
