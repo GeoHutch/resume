@@ -7,7 +7,7 @@
 % Date: July 2011
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% How to use writeLaTeX: 
+% How to use write LaTeX: 
 %
 % You edit the source code here on the left, and the preview on the
 % right shows you the result within a few seconds.
@@ -22,6 +22,8 @@
 % http://en.wikibooks.org/wiki/LaTeX
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%Modified for use in the resume of George Hutchinson%%%
 \documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
 							
 \usepackage[english]{babel}
@@ -34,7 +36,7 @@
 	\textheight=700px                    % Saving trees ;-)
 \usepackage{url}
 
-\geometry{verbose,tmargin=0.5in,bmargin=0.5in,lmargin=0.5in,rmargin=0.5in}
+\geometry{verbose,tmargin=0.25in,bmargin=0.25in,lmargin=0.5in,rmargin=0.5in}
 
 \frenchspacing              % Better looking spacings after periods
 \pagestyle{empty}           % No pagenumbers/headers/footers
@@ -51,13 +53,13 @@
 %%% ------------------------------------------------------------
 \newlength{\spacebox}
 \settowidth{\spacebox}{8888888888}			% Box to align text
-\newcommand{\sepspace}{\vspace*{1em}}		% Vertical space macro
+\newcommand{\sepspace}{\vspace*{0.5em}}		% Vertical space macro
 
 \newcommand{\MyName}[1]{ % Name
 		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
 		\par \normalsize \normalfont}
 		
-\newcommand{\MySlogan}[1]{ % Slogan (optional)
+\newcommand{\MyContact}[1]{ % Contact info
 		\large \usefont{OT1}{phv}{m}{n}\hfill #1
 		\par \normalsize \normalfont}
 
@@ -109,7 +111,7 @@
 %\end{wrapfigure}
 
 \MyName{GEORGE HUTCHINSON}
-\MySlogan{4669 Vintage Ranch Lane, Santa Barbara, CA, 93110\\\hspace*{\fill}(805) 252-7231, \url{geohh@protonmail.ch}}
+\MyContact{4669 Vintage Ranch Lane, Santa Barbara, CA, 93110\\\hspace*{\fill}(805) 252-7231, \url{geohh@protonmail.ch}}
 
 
 %%% Personal details
@@ -135,7 +137,7 @@ Available May through August 2017.
 
 \NewPart{Work experience}{}
 
-\WorkEntry{U.C. Santa Barbara \textit{Research Mentorship Program}}{Summer 2015}{DEEPSPACE Experimental Cosmology lab (PI: Phil Lubin), Summer research intern}{Worked on project: \textit{Frosty Mirror Frontier: Analyzing the Optical Effects of Mid-stratospheric Conditions on a Telescope Mirror}.}
+\WorkEntry{U.C. Santa Barbara \textit{Research Mentorship Program}}{Summer 2015}{DEEPSPACE Experimental Cosmology lab (PI: Phil Lubin, PhD), Summer research intern}{Worked on project: \textit{Frosty Mirror Frontier: Analyzing the Optical Effects of Mid-stratospheric Conditions on a Telescope Mirror}.}
 \sepspace
 
 \WorkEntry{Junior Assembly Intern}{Summer 2014}{Aurrion Inc., summer intern}{\begin{itemize}\setlength\itemsep{0em}
@@ -147,10 +149,10 @@ Available May through August 2017.
 \label{EDU}
 \NewPart{Education}{}
 
-\EducationEntry{U.C. Berkeley}{2016-present}{Intended Major: Electrical Engineering and Computer Science\\Minor: Physics}{Cumulative GPA: 3.676. Class of 2020. Relevant courses in: Data Structures \& Algorithms, Linear Algebra, Discrete Mathematics, Thermodynamics \& Electricity/Magnetism.}
+\EducationEntry{U.C. Berkeley}{2016-present}{Intended Major: Electrical Engineering and Computer Science\\Minor: Physics}{Cumulative GPA: 3.676. Class of 2020.\\\textbf{Relevant courses} in: Data Structures \& Algorithms, Linear Algebra, Discrete Mathematics, Thermodynamics \& Electricity/Magnetism.}
 \sepspace
 
-\EducationEntryNoSubtitle{Robert Louis Stevenson School}{2012-2016}{Cumulative GPA: 4.24 (Top 2\% of class).\\\textbf{Honors/Awards}:\begin{itemize}\setlength\itemsep{0em}
+\EducationEntryNoSubtitle{Robert Louis Stevenson School}{2012 - 2016}{Cumulative GPA: 4.24 (Top 2\% of class).\\\textbf{Honors/Awards}:\begin{itemize}\setlength\itemsep{0em}
 		\item\textit{Cum Laude Society} for Academic Achievement; 2015, 2016.
 		\item Winner, \textit{Rensselaer Medal} for scientific and mathematical achievement; 2015.
 		\indent Rotary International Youth Leadership Award \& \textit{Camp Royal} attendance; June 2015.
@@ -162,17 +164,19 @@ Available May through August 2017.
 
 %%% Skills
 %%% ------------------------------------------------------------
+\label{SKILLS}
 \NewPart{Skills}{}
 %\SkillsEntry{Languages}{Dutch (mother tongue)}
 %\SkillsEntry{}{English (fluent)}
 %\SkillsEntry{}{German (fluent)}
 \begin{tabular}{ll}
-\textit{\raggedright{Programming:}} & Python, Java, \LaTeX.\\
+\textit{Programming:} & Python, Java, \LaTeX.\\
 \textit{UNIX system administration:} & Debain, Ubuntu, RHEL\\
 \end{tabular}
 
 %%% Extracurriculars
 %%% ------------------------------------------------------------
+\label{EXTRACUR}
 \NewPart{Extracurricular Activities}{}
 \begin{itemize}\setlength\itemsep{0em}
 	\item Lead control systems engineer \& founding member, Stevenson School FIRST Robotics Competition team; 2014-2016
@@ -182,6 +186,11 @@ Available May through August 2017.
 
 %%% Referencese
 %%% ------------------------------------------------------------
+\label{REFERENCES}
 \NewPart{References}{}
-Available upon request
+\begin{itemize}\setlength\itemsep{0em}
+	\item Matthew Turk, PhD, Prof. Computer Science at UC Santa Barbara. \url{mturk@cs.ucsb.edu}.
+	\item Joseph Connell, mentor at UCSB Research Mentorship Program. \url{zippyconnell@gmail.com}.
+	\item Augi Spannagel, Sr Engineering Manager, Juniper Network Systems. url{mspannagel@juniper.net}
+\end{itemize}
 \end{document}
