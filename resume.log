@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.8.23)  26 AUG 2017 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.8.23)  21 DEC 2017 10:50
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **resume.tex
 (./resume.tex
@@ -544,7 +544,7 @@ ne 189.
 Here is how much of TeX's memory you used:
  7856 strings out of 494946
  126838 string characters out of 6180981
- 339047 words of memory out of 5000000
+ 339046 words of memory out of 5000000
  10984 multiletter control sequences out of 15000+600000
  20090 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -560,7 +560,7 @@ s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 ic/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvet
 ic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
 b>
-Output written on resume.pdf (1 page, 118215 bytes).
+Output written on resume.pdf (1 page, 118386 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
