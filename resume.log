@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.8.23)  2 JAN 2018 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.8.23)  2 JAN 2018 16:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -421,14 +421,14 @@ Package geometry Warning: The marginal notes overrun the paper.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(36.135pt, 525.23795pt, 36.135pt)
-* v-part:(T,H,B)=(18.06749pt, 808.91196pt, 18.06749pt)
+* v-part:(T,H,B)=(28.90755pt, 798.0719pt, 18.06749pt)
 * \paperwidth=597.50793pt
 * \paperheight=845.04694pt
 * \textwidth=525.23795pt
-* \textheight=808.91196pt
+* \textheight=798.0719pt
 * \oddsidemargin=-36.135pt
 * \evensidemargin=-36.135pt
-* \topmargin=-91.60251pt
+* \topmargin=-80.76245pt
 * \headheight=17.0pt
 * \headsep=20.40001pt
 * \topskip=11.0pt
@@ -544,7 +544,7 @@ ne 194.
 Here is how much of TeX's memory you used:
  7856 strings out of 494946
  126838 string characters out of 6180981
- 339048 words of memory out of 5000000
+ 339046 words of memory out of 5000000
  10984 multiletter control sequences out of 15000+600000
  20090 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -560,7 +560,7 @@ s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 ic/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvet
 ic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
 b>
-Output written on resume.pdf (1 page, 119039 bytes).
+Output written on resume.pdf (1 page, 119035 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
